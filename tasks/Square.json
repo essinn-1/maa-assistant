@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "广场神像奖励",
+            "label": "进入广场",
+            "entry": "StartSquare",
+            "description": "进入广场领取，暂时需要站在雕像旁",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

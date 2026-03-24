@@ -1,0 +1,407 @@
+{
+    "StartHunt":{
+        "next":[
+            "EnterHunt",
+            "DailyHunting",
+            "[JumpBack]StartGame"
+        ]
+    },
+    "EnterHunt":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速狩猎",
+                "roi":[
+                    1140,
+                    190,
+                    65,
+                    25
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target":[1172,171]
+            }
+        },
+        "post_delay":1500,
+        "next":[
+            "EnterHunt",
+            "DailyHunting"
+        ]
+    },
+    "DailyHunting":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"9.守山人休息处",
+                "threshold":0.60
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target_offset":[30,-30,0,0]
+            }
+        },
+        "next":[
+            "FastHunt1"
+        ]
+    },
+
+    "FastHunt1":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速狩猎",
+                "roi":[1065,645,95,35],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "MainHunt1"
+        ]
+    },
+    "MainHunt1":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "狩猎",
+                "threshold": 0.60,
+                "roi":[655,505,40,25]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "HuntClick1"
+        ]
+    },
+    "HuntClick1":{
+        "pre_delay":1500,
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[116,494]
+            }
+        },
+        "next":[
+            "WeatherGold",
+            "WeatherSlime",
+            "HuntClick1"
+        ],
+        "post_delay":1000
+    },
+    "WeatherGold":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"Hunt/Up.png",
+                "roi":[90,140,25,25],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[116,167]
+            }
+        },
+        "next":[
+            "GetGold"
+        ]
+    },
+    "WeatherSlime":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"Hunt/Up.png",
+                "roi":[90,205,25,25],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[114,230]
+            }
+        },
+        "next":[
+            "GetSlime"
+        ]
+    },
+
+    "GetGold":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"Hunt/Gold.png",
+                "roi":[455,300,80,80],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
+        "next":[
+            "FastHunt2"
+        ]
+    },
+    "GetSlime":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"Hunt/Slime.png",
+                "roi":[590,290,85,85],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
+        "next":[
+            "FastHunt2"
+        ]
+    },
+    
+    "FastHunt2":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速狩猎",
+                "roi":[1065,645,95,35],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "SetMax2"
+        ]
+    },
+    "SetMax2":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "MAX",
+                "threshold": 0.60,
+                "roi":[750,375,60,25]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "MainHunt2"
+        ]
+    },
+    "MainHunt2":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "狩猎",
+                "threshold": 0.60,
+                "roi":[650,500,50,30]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "HuntClick2"
+        ]
+    },
+    "HuntClick2":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[116,494]
+            }
+        },
+        "next":[
+            "GetRock",
+            "HuntClick2"
+        ]
+    },
+
+    "GetRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "圣石洞穴",
+                "roi":[80,300,70,30],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "WaterRock",
+            "GetRock"
+        ]
+    },
+
+    "FireRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "火之洞穴",
+                "roi":[155,83,75,28],
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "FastHunt3",
+            "FireRock"
+        ]
+    },
+    "WaterRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "水之洞穴",
+                "roi":[155,131,75,28],
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "FastHunt3",
+            "WaterRock"
+        ]
+    },
+    "WindRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "风之洞穴",
+                "roi":[155,180,75,25],
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "FastHunt3",
+            "WindRock"
+        ]
+    },
+    "LightRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "光之洞穴",
+                "roi":[155,230,75,28],
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "FastHunt3",
+            "LightRock"
+        ]
+    },
+    "DarkRock":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "暗之洞穴",
+                "roi":[155,275,75,28],
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "FastHunt3",
+            "DarkRock"
+        ]
+    },
+
+    "FastHunt3":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速狩猎",
+                "roi":[1065,645,95,35],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "SetMax3",
+            "FastHunt3"
+        ]
+    },
+    "SetMax3":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "MAX",
+                "threshold": 0.60,
+                "roi":[750,375,60,25]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "MainHunt3"
+        ]
+    },
+    "MainHunt3":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "狩猎",
+                "threshold": 0.60,
+                "roi":[650,500,50,30]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "HuntClick3"
+        ]
+    },
+    "HuntClick3":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[116,494]
+            }
+        },
+        "next":[
+            "StartGame"
+        ]
+    }
+}

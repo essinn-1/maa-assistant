@@ -1,0 +1,106 @@
+{
+    "interface_version": 2,
+    "name": "MaaBrownDust",
+    "description": "MaaBrownDust",
+    "version": "v114514.0.0",
+    "license": "misc/LICENSE_SHORT.md",
+    "welcome": "README.md",
+    "icon": "misc/MaaEnd-Tiny.png",
+    "github": "https://github.com/未知",
+    "mirrorchyan_rid": "#掉我怕有bug,不敢删",
+    "mirrorchyan_multiplatform": true,
+    "languages": {
+        "zh_cn": "misc/locales/zh_cn.json",
+        "zh_tw": "misc/locales/zh_tw.json",
+        "en_us": "misc/locales/en_us.json",
+        "ja_jp": "misc/locales/ja_jp.json",
+        "ko_kr": "misc/locales/ko_kr.json"
+    },
+    "controller": [
+        {
+            "name": "Win32",
+            "label": "$controller.Win32.label",
+            "type": "Win32",
+            "win32": {
+                "class_regex": "UnityWndClass",
+                "window_regex": "BrownDust II",
+                "screencap": "FramePool",
+                "screencap_target_short_side": 720,
+                "mouse": "SendMessageWithCursorPos",
+                "keyboard": "SendMessageWithCursorPos"
+            },
+            "permission_required": true
+        },
+        {
+            "name": "Win32-Window",
+            "label": "$controller.Win32-Window.label",
+            "type": "Win32",
+            "win32": {
+                "class_regex": "UnityWndClass",
+                "window_regex": "BrownDust II",
+                "screencap": "PrintWindow",
+                "mouse": "SendMessageWithCursorPos",
+                "keyboard": "SendMessageWithCursorPos"
+            },
+            "permission_required": true
+        },
+        {
+            "name": "Win32-Front",
+            "label": "$controller.Win32-Front.label",
+            "type": "Win32",
+            "win32": {
+                "class_regex": "UnityWndClass",
+                "window_regex": "BrownDust II",
+                "screencap": "DXGI_DesktopDup_Window",
+                "mouse": "Seize",
+                "keyboard": "Seize"
+            },
+            "permission_required": true
+        },
+        {
+            "name": "ADB",
+            "label": "$controller.ADB.label",
+            "type": "Adb",
+            "attach_resource_path": [
+                "./resource_adb"
+            ]
+        },
+        {
+            "name": "PlayCover",
+            "type": "PlayCover",
+            "playcover": {
+                "uuid": "maa.playcover"
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "官服",
+            "label": "$resource.CN.label",
+            "path": [
+                "./resource"
+            ]
+        }
+    ],
+    "agent": {
+        "child_exec": "agent/go-service",
+        "child_args": [],
+        "timeout":15000
+    },
+    "task": [],
+    "import": [
+        "tasks/StartGame.json",
+        "tasks/Draw.json",
+        "tasks/Sociaty.json",
+        "tasks/Operate.json",
+        "tasks/PVP.json",
+        "tasks/Square.json",
+        "tasks/HuntingArea.json",
+        "tasks/Bag.json",
+        "tasks/Mission.json",
+        "tasks/Passport.json",
+        "tasks/Mail.json",
+        "tasks/Warcraft.json",
+        "tasks/test.json"
+    ]
+}

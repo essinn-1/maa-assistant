@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "通行证",
+            "label": "",
+            "entry": "StartPassport",
+            "description": "只会拿前两个，而且如果一条路运行下来魔兽和每天五次是没打的记得",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

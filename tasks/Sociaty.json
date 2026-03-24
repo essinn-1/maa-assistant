@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "进入公会",
+            "label": "吃公会低保",
+            "entry": "StartSociaty",
+            "description": "进入公会",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

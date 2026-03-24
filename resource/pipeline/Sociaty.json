@@ -1,0 +1,95 @@
+{
+    "StartSociaty":{
+        "next":[
+            "InSociaty"
+        ]
+    },
+    "InSociaty": {
+        "pre_delay":3000,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "excepted": "公会",
+                "threshold": 0.70,
+                "roi":[228,122,35,20]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target":[246,101]
+            }
+        },
+        "post_delay":3000,
+        "next": [
+            "ClickSecond",
+            "OutSociaty"
+        ]
+    },
+    "ClickSecond": {
+        "action": {
+            "type": "Click",
+            "param": {"target": [80, 360]}
+        },
+        "next":[
+            "OutSociaty"
+        ]
+    },
+
+    "OutSociaty":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[113,33]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "BesureSociaty",
+            "ClickSecond"
+        ]
+    },
+    "BesureSociaty": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "StartGame/Shadow.png",
+                "threshold": 0.60,
+                "roi":[500,50,300,460]
+            }
+        },
+        "next":[
+            "InHomeLand"
+        ]
+    },
+    "InHomeLand":{
+        "pre_delay":0,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "excepted": "我的小屋",
+                "threshold": 0.60,
+                "roi":[75,122,70,20]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target":[109,101]
+            }
+        },
+        "post_delay":3000,
+        "next": [
+            "OutHomeLand"
+        ]
+    },
+    "OutHomeLand":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[113,33]
+            }
+        },
+        "post_delay":1000
+    }
+}

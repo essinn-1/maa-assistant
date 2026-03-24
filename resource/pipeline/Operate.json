@@ -1,0 +1,99 @@
+{
+    "StartOperate":{
+        "next":[
+            "EnterOperating",
+            "[JumpBack]StartGame"
+        ]
+    },
+    "EnterOperating": {
+        "pre_delay":0,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "经营管理",
+                "threshold": 0.60,
+                "roi":[75,192,70,20]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target":[110,171]
+            }
+        },
+        "post_delay":3000,
+        "next": [
+            "GetWithOneClick",
+            "EnterOperating"
+        ]
+    },
+    "GetWithOneClick":{
+        "pre_delay":0,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "一键获得",
+                "threshold": 0.50,
+                "roi":[690,482,70,20]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":2000,
+        "next": [
+            "EnterRestaurant",
+            "OperateClick"
+        ]
+    },
+    "OperateClick":{
+        "action": {
+            "type": "Click",
+            "param":{
+                "target":[640,700]
+            }
+        },
+        "post_delay":2000,
+        "next":[
+            "EnterRestaurant"
+        ]
+    },
+    "EnterRestaurant":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "立刻前往",
+                "threshold": 0.40,
+                "roi":[745,240,65,20]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":2000,
+        "next": [
+            "EnterRestaurant",
+            "FrequentCaller"
+        ]
+    },
+    "FrequentCaller":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "常客",
+                "threshold": 0.80,
+                "roi":[96,208,100,20]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target_offset":[20,-20,0,0]
+            }
+        },
+        "post_delay":2000,
+        "next": [
+            "StartGame"
+        ]
+    }
+}

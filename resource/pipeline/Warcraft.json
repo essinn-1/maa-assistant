@@ -1,0 +1,147 @@
+{
+    "StartWarcraft":{
+        "next":[
+            "EnterWarcraft",
+            "[JumpBack]StartGame"
+        ]
+    },
+
+    "EnterWarcraft":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":["魔兽","追踪者"],
+                "roi":[1000,300,260,180],
+                "threshold":0.60
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[1110,360]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "ChallengeBattle"
+        ]
+    },
+    "ChallengeBattle":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "挑战战斗",
+                "threshold": 0.80,
+                "roi":[520,600,100,60]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param":{
+                "target_offset":[40,-80,0,0]
+            }
+        },
+        "post_delay":1000,
+        "next": [
+            "WarcraftBattleChoose",
+            "WarcraftBattleSwipe",
+            "ChallengeBattle"
+        ]
+    },
+    "WarcraftBattleChoose":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "15",
+                "threshold": 0.80,
+                "roi":[150,660,60,60]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "next":[
+            "WarcraftQuickBattle"
+        ]
+    },
+
+    "WarcraftBattleSwipe":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "挑战战斗",
+                "threshold": 0.80,
+                "roi":[180,10,100,50]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    225,
+                    580
+                ],
+                "end": [
+                    225,
+                    480
+                ],
+                "end_hold": 1000
+            }
+        },
+        "next":[
+            "WarcraftBattleChoose",
+            "WarcraftBattleSwipe"
+        ]
+    },
+
+    "WarcraftQuickBattle":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "快速战斗",
+                "threshold": 0.80,
+                "roi":[740,640,120,40]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "next":[
+            "WarcraftSetMax"
+        ]
+    },
+
+    "WarcraftSetMax":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "MAX",
+                "threshold": 0.60,
+                "roi":[740,350,80,50]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "WarcraftBegin"
+        ]
+    },
+
+    "WarcraftBegin":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "战斗",
+                "threshold": 0.80,
+                "roi":[640,530,60,40]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "StartGame"
+        ]
+    }
+}

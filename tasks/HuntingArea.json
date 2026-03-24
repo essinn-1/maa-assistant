@@ -1,0 +1,83 @@
+{
+    "task": [
+        {
+            "name": "Hunting Area",
+            "label": "狩猎场",
+            "entry": "StartHunt",
+            "description": "",
+            "option":[
+                "ChooseRock"
+            ]
+        }
+    ],
+    "option": {
+        "ChooseRock":{
+            "type":"select",
+            "label":"选择石头类型",
+            "des":"",
+            "default_case":"FireRock",
+            "cases":[
+                {
+                    "name":"FireRock",
+                    "label":"火之石",
+                    "pipeline_override":{
+                        "GetRock":{
+                            "next":[
+                                "FireRock",
+                                "GetRock"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name":"WaterRock",
+                    "label":"水之石",
+                    "pipeline_override":{
+                        "GetRock":{
+                            "next":[
+                                "WaterRock",
+                                "GetRock"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name":"WindRock",
+                    "label":"风之石",
+                    "pipeline_override":{
+                        "GetRock":{
+                            "next":[
+                                "WindRock",
+                                "GetRock"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name":"LightRock",
+                    "label":"光之石",
+                    "pipeline_override":{
+                        "GetRock":{
+                            "next":[
+                                "LightRock",
+                                "GetRock"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name":"DarkRock",
+                    "label":"暗之石",
+                    "pipeline_override":{
+                        "GetRock":{
+                            "next":[
+                                "DarkRock",
+                                "GetRock"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

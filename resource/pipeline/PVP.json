@@ -1,0 +1,442 @@
+{
+    "StartPVP":{
+        "action":{
+            "type":"DoNothing"
+        },
+        "next":[
+            "EnterPVP2",
+            "EnterPVP",
+            "PVPWaiting",
+            "CorrectFirst",
+            "GetDaily",
+            "[JumpBack]StartGame"
+        ]
+    },
+
+    "EnterPVP":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "StartGame/Shadow.png",
+                "threshold": 0.60,
+                "roi":[500,50,300,460]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[1130,645]
+            }
+        },
+        "next":[
+            "EnterPVP2",
+            "EnterPVP"
+        ]
+    },
+    "EnterPVP2":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/EnterPVP.png",
+                "threshold": 0.50,
+                "roi":[50,300,450,255]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":2500,
+        "next":[
+            "PVPWaiting",
+            "EnterPVP2",
+            "GetDaily",
+            "MovePVP",
+            "SeasonReward",
+            "CorrectFirst"
+        ]
+    },
+
+    "SeasonReward":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["点击","画面","即可","返回"],
+                "threshold": 0.80,
+                "roi":[730,520,200,60]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":1500,
+        "next":[
+            "GetDaily",
+            "MovePVP",
+            "SeasonReward",
+            "CorrectFirst"
+        ]
+    },
+
+    "PVPWaiting":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/Waiting.png",
+                "threshold": 0.80
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
+        "post_delay":2500,
+        "next":[
+            "PVPWaiting",
+            "EnterPVP2",
+            "GetDaily",
+            "MovePVP",
+            "CorrectFirst"
+        ]
+    },
+
+    "CorrectFirst":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "确认",
+                "threshold": 0.80,
+                "roi":[620,660,40,20]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":1500,
+        "next":[
+            "CorrectFirst", 
+            "GetDaily",
+            "MovePVP"
+        ]
+    },
+
+    "GetDaily":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/GetDaily.png",
+                "threshold": 0.50,
+                "roi":[905,555,75,640]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "MovePVP"
+        ]
+    },
+
+    "MovePVP":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/Move.png",
+                "threshold": 0.50,
+                "roi":[120,520,150,150]
+            }
+        },
+        "max_hit": 2,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    192,
+                    588
+                ],
+                "end": [
+                    137,
+                    643
+                ],
+                "end_hold": 1000
+            }
+        },
+        "next":[
+            "ClickAuto",
+            "MovePVP"
+        ]
+    },
+    "ClickAuto":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "自动战斗",
+                "threshold": 0.60,
+                "roi":[980,660,65,22]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[1012,646]
+            }
+        },
+        "next":[
+            "SetFree",
+            "SetMax"
+        ]
+    },
+    "SetFree":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/FreeNo.png",
+                "threshold": 0.50,
+                "roi":[835,260,70,35]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "FreeNO",
+            "FreeYes",
+            "SetFree"
+        ],
+        "post_delay":1500
+    },
+    "FreeYes":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/FreeYes.png",
+                "threshold": 0.90,
+                "roi":[835,260,70,35]
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
+        "next":[
+            "SetMax"
+        ]
+    },
+    "FreeNO":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/Word.png",
+                "threshold": 0.50,
+                "roi":[525,145,80,30]
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
+        "next":[
+            "CanclePVP"
+        ]
+    },
+
+    "SetMax":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "template": "MAX",
+                "threshold": 0.60,
+                "roi":[800,414,50,21]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "PVPBegin"
+        ]
+    },
+    "PVPBegin":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "4",
+                "threshold": 0.80,
+                "roi":[657,449,12,21]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[694,540]
+            }
+        },
+        "next":[
+            "WaitForPVP"
+        ]
+    },
+    "Quit":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/X.png",
+                "threshold": 0.50,
+                "roi":[770,187,42,40]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "Quit",
+            "GoOut"
+        ]
+    },
+    "GoOut":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "离开",
+                "threshold": 0.40,
+                "roi":[640,600,600,110]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":5000,
+        "next":[
+            "GoOut",
+            "CorrectPVP",
+            "Finish"
+        ]
+    },
+    "WaitForPVP":{
+        "pre_delay":5000,
+        "post_delay":5000,
+        "next":[
+            "Quit",
+            "WaitForPVP",
+            "GoOut"
+        ]
+    },
+    
+    "CorrectPVP":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "确认",
+                "threshold": 0.60,
+                "roi":[620,660,40,20]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":1500,
+        "next":[
+            "CorrectPVP", 
+            "Finish"
+        ]
+    },
+    "Finish":{
+        "action":{
+            "type":"DoNothing"
+        }
+    },
+
+    "CanclePVP":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "取消",
+                "threshold": 0.60,
+                "roi":[515,527,45,25]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[535,538]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "CanclePVP",
+            "PVPBack"
+        ]
+    },
+    "PVPBack":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"PVP/Back.png",
+                "roi":[70,0,75,60],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[75,37]
+            }
+        },
+        "post_delay":1500,
+        "next":[
+            "Worship",
+            "FinishPVP"
+        ]
+    },
+
+    "Worship":{
+        "des":"每周膜拜大佬拿金币那个",
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"PVP/Worship.png",
+                "roi":[260,310,140,80],
+                "threshold":0.50
+            }
+        },
+        "next":[
+            "WorshipMove1"
+        ]
+    },
+    "WorshipMove1":{
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    192,
+                    588
+                ],
+                "end": [
+                    137,
+                    527
+                ],
+                "end_hold": 200
+            }
+        },
+        "next":[
+            "WorshipMove2"
+        ]
+    },
+    "WorshipMove2":{
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    192,
+                    588
+                ],
+                "end": [
+                    137,
+                    643
+                ],
+                "end_hold": 200
+            }
+        }
+    },
+
+    "FinishPVP":{
+        "action":{
+            "type":"DoNothing"
+        }
+    }
+}

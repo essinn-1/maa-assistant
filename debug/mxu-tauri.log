@@ -1,0 +1,174 @@
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Passport.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Mail.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Warcraft.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\test.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_cn.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_tw.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\en_us.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ja_jp.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ko_kr.json"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:34:32][INFO][mxu_lib::tray] Tray tooltip updated: MaaBrownDust
+[2026-03-24][08:34:32][INFO][mxu_lib::tray] Tray icon updated: D:\browndust 2\install/misc/MaaEnd-Tiny.png
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::state] maa_get_all_states called
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_init called, lib_dir: None
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_init using path: "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_init loading library...
+[2026-03-24][08:34:32][DEBUG][mxu_lib::maa_ffi] SetDllDirectoryW set to "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] Loading MaaFramework from "D:\\browndust 2\\install\\maafw\\MaaFramework.dll"...
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] MaaFramework loaded successfully
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] Loading MaaToolkit from "D:\\browndust 2\\install\\maafw\\MaaToolkit.dll"...
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] MaaToolkit loaded successfully
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] Loading MaaAgentClient from "D:\\browndust 2\\install\\maafw\\MaaAgentClient.dll"...
+[2026-03-24][08:34:32][INFO][mxu_lib::maa_ffi] MaaAgentClient loaded successfully
+[2026-03-24][08:34:32][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption user_path: D:\browndust 2\install
+[2026-03-24][08:34:32][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption result: 1
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_init success, version: v5.7.0-alpha.2
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] maa_check_version called
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_check_version: current=5.7.0-alpha.2, minimum=5.5.0-beta.1, compatible=true
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\README.md"
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] maa_get_version called
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_get_version result: v5.7.0-alpha.2
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] maa_find_win32_windows called, class_regex: Some("UnityWndClass"), window_regex: Some("BrownDust II")
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] Creating desktop window list...
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] Calling MaaToolkitDesktopWindowFindAll...
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] MaaToolkitDesktopWindowFindAll returned: 1
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] Found 20 total window(s)
+[2026-03-24][08:34:32][DEBUG][mxu_lib::commands::maa_core] Destroying desktop window list...
+[2026-03-24][08:34:32][INFO][mxu_lib::commands::maa_core] Returning 0 filtered window(s)
+[2026-03-24][08:34:32][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.com/
+[2026-03-24][08:34:33][DEBUG][cookie_store::cookie_store] inserting Set-Cookie 'Cookie { cookie_string: Some("acw_tc=2a3078a717743124485978682e4d16f86406be6de9e70fde82f109ecdb;path=/;HttpOnly;Max-Age=3600"), name: Indexed(0, 6), value: Indexed(7, 65), expires: None, max_age: Some(Duration { seconds: 3600, nanoseconds: 0 }), domain: None, path: Some(Indexed(71, 72)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+[2026-03-24][08:34:33][DEBUG][cookie_store::cookie_store] inserting Set-Cookie 'Cookie { cookie_string: Some("cdn_sec_tc=2a3078a717743124485978682e4d16f86406be6de9e70fde82f109ecdb;path=/;HttpOnly;Max-Age=3600"), name: Indexed(0, 10), value: Indexed(11, 69), expires: None, max_age: Some(Duration { seconds: 3600, nanoseconds: 0 }), domain: None, path: Some(Indexed(75, 76)), secure: None, http_only: Some(true), same_site: None, partitioned: None }'
+[2026-03-24][08:34:33][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.net/
+[2026-03-24][08:34:35][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\README.md"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] SetDllDirectoryW set to "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaFramework from "D:\\browndust 2\\install\\maafw\\MaaFramework.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaFramework loaded successfully
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaToolkit from "D:\\browndust 2\\install\\maafw\\MaaToolkit.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaToolkit loaded successfully
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaAgentClient from "D:\\browndust 2\\install\\maafw\\MaaAgentClient.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaAgentClient loaded successfully
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption user_path: D:\browndust 2\install
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption result: 1
+[2026-03-24][08:39:10][INFO][mxu_lib] MaaFramework loaded from "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\interface.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\StartGame.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Draw.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Sociaty.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Operate.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\PVP.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Square.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\HuntingArea.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Bag.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Mission.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Passport.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Mail.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Warcraft.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\test.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_cn.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_tw.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\en_us.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ja_jp.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ko_kr.json"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:39:10][INFO][mxu_lib::tray] Tray tooltip updated: MaaBrownDust
+[2026-03-24][08:39:10][INFO][mxu_lib::tray] Tray icon updated: D:\browndust 2\install/misc/MaaEnd-Tiny.png
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::state] maa_get_all_states called
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_init called, lib_dir: None
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_init using path: "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_init loading library...
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] SetDllDirectoryW set to "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaFramework from "D:\\browndust 2\\install\\maafw\\MaaFramework.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaFramework loaded successfully
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaToolkit from "D:\\browndust 2\\install\\maafw\\MaaToolkit.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaToolkit loaded successfully
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] Loading MaaAgentClient from "D:\\browndust 2\\install\\maafw\\MaaAgentClient.dll"...
+[2026-03-24][08:39:10][INFO][mxu_lib::maa_ffi] MaaAgentClient loaded successfully
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption user_path: D:\browndust 2\install
+[2026-03-24][08:39:10][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption result: 1
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_init success, version: v5.7.0-alpha.2
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] maa_check_version called
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_check_version: current=5.7.0-alpha.2, minimum=5.5.0-beta.1, compatible=true
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\README.md"
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] maa_get_version called
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_get_version result: v5.7.0-alpha.2
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] maa_find_win32_windows called, class_regex: Some("UnityWndClass"), window_regex: Some("BrownDust II")
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] Creating desktop window list...
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] Calling MaaToolkitDesktopWindowFindAll...
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] MaaToolkitDesktopWindowFindAll returned: 1
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] Found 20 total window(s)
+[2026-03-24][08:39:10][DEBUG][mxu_lib::commands::maa_core] Destroying desktop window list...
+[2026-03-24][08:39:10][INFO][mxu_lib::commands::maa_core] Returning 0 filtered window(s)
+[2026-03-24][08:39:10][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.com/
+[2026-03-24][08:39:10][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.net/
+[2026-03-24][08:45:52][DEBUG][mxu_lib::maa_ffi] SetDllDirectoryW set to "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] Loading MaaFramework from "D:\\browndust 2\\install\\maafw\\MaaFramework.dll"...
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] MaaFramework loaded successfully
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] Loading MaaToolkit from "D:\\browndust 2\\install\\maafw\\MaaToolkit.dll"...
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] MaaToolkit loaded successfully
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] Loading MaaAgentClient from "D:\\browndust 2\\install\\maafw\\MaaAgentClient.dll"...
+[2026-03-24][08:45:52][INFO][mxu_lib::maa_ffi] MaaAgentClient loaded successfully
+[2026-03-24][08:45:52][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption user_path: D:\browndust 2\install
+[2026-03-24][08:45:52][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption result: 1
+[2026-03-24][08:45:52][INFO][mxu_lib] MaaFramework loaded from "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\interface.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\StartGame.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Draw.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Sociaty.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Operate.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\PVP.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Square.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\HuntingArea.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Bag.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Mission.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Passport.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Mail.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\Warcraft.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\tasks\\test.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_cn.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\zh_tw.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\en_us.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ja_jp.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\misc\\locales\\ko_kr.json"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:45:53][INFO][mxu_lib::tray] Tray tooltip updated: MaaBrownDust
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::state] maa_get_all_states called
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_init called, lib_dir: None
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_init using path: "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_init loading library...
+[2026-03-24][08:45:53][DEBUG][mxu_lib::maa_ffi] SetDllDirectoryW set to "D:\\browndust 2\\install\\maafw"
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] Loading MaaFramework from "D:\\browndust 2\\install\\maafw\\MaaFramework.dll"...
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] MaaFramework loaded successfully
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] Loading MaaToolkit from "D:\\browndust 2\\install\\maafw\\MaaToolkit.dll"...
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] MaaToolkit loaded successfully
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] Loading MaaAgentClient from "D:\\browndust 2\\install\\maafw\\MaaAgentClient.dll"...
+[2026-03-24][08:45:53][INFO][mxu_lib::maa_ffi] MaaAgentClient loaded successfully
+[2026-03-24][08:45:53][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption user_path: D:\browndust 2\install
+[2026-03-24][08:45:53][DEBUG][mxu_lib::maa_ffi] MaaToolkitConfigInitOption result: 1
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_init success, version: v5.7.0-alpha.2
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] maa_check_version called
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_check_version: current=5.7.0-alpha.2, minimum=5.5.0-beta.1, compatible=true
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file (base64): "D:\\browndust 2\\install\\misc\\MaaEnd-Tiny.png"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::file_ops] Reading local file: "D:\\browndust 2\\install\\README.md"
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] maa_get_version called
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_get_version result: v5.7.0-alpha.2
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] maa_find_win32_windows called, class_regex: Some("UnityWndClass"), window_regex: Some("BrownDust II")
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] Creating desktop window list...
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] Calling MaaToolkitDesktopWindowFindAll...
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] MaaToolkitDesktopWindowFindAll returned: 1
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] Found 20 total window(s)
+[2026-03-24][08:45:53][DEBUG][mxu_lib::commands::maa_core] Destroying desktop window list...
+[2026-03-24][08:45:53][INFO][mxu_lib::commands::maa_core] Returning 0 filtered window(s)
+[2026-03-24][08:45:53][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.com/
+[2026-03-24][08:45:53][DEBUG][reqwest::connect] starting new connection: https://mirrorchyan.net/
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] maa_get_version called
+[2026-03-24][08:45:56][INFO][mxu_lib::commands::maa_core] maa_get_version result: v5.7.0-alpha.2
+[2026-03-24][08:45:56][INFO][mxu_lib::commands::maa_core] maa_find_win32_windows called, class_regex: Some("UnityWndClass"), window_regex: Some("BrownDust II")
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] Creating desktop window list...
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] Calling MaaToolkitDesktopWindowFindAll...
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] MaaToolkitDesktopWindowFindAll returned: 1
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] Found 20 total window(s)
+[2026-03-24][08:45:56][DEBUG][mxu_lib::commands::maa_core] Destroying desktop window list...
+[2026-03-24][08:45:56][INFO][mxu_lib::commands::maa_core] Returning 0 filtered window(s)

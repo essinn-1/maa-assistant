@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "测试用",
+            "label": "测试用",
+            "entry": "GoBack",
+            "description": "",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

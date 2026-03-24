@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "邮件",
+            "label": "进入邮件领取",
+            "entry": "StartMail",
+            "description": "",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

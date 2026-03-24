@@ -1,0 +1,214 @@
+2026-03-24 00:00:00 INFO  [Task] 定时检查: 周2 0:00
+2026-03-24 00:00:00 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:00 INFO  [Config] 配置保存成功
+2026-03-24 00:00:15 INFO  [Task] 任务 1/1 完成
+2026-03-24 00:00:15 INFO  [MAA] 停止 Agent, 实例: illekb0
+2026-03-24 00:00:15 INFO  [Task] 所有任务执行完成
+2026-03-24 00:00:15 INFO  [MAA] 停止 Agent 成功
+2026-03-24 00:00:15 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:15 INFO  [Config] 配置保存成功
+2026-03-24 00:00:20 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:20 INFO  [Config] 配置保存成功
+2026-03-24 00:00:23 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:23 INFO  [Config] 配置保存成功
+2026-03-24 00:00:24 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:24 INFO  [Config] 配置保存成功
+2026-03-24 00:00:24 INFO  [Task] 当前已是管理员权限
+2026-03-24 00:00:24 INFO  [MAA] 启动任务, 实例: illekb0 , 任务数: 1 , cwd: D:\browndust 2\install
+2026-03-24 00:00:24 DEBUG [MAA]   任务[0]: entry=StartMail, pipelineOverride=[]
+2026-03-24 00:00:24 INFO  [MAA] Agent 配置: {"child_exec":"agent/go-service","child_args":[],"timeout":15000} , tcpCompatMode: false
+2026-03-24 00:00:24 INFO  [Task] 实例 配置 1: 开始执行任务, 数量: 1
+2026-03-24 00:00:24 INFO  [Task] 实例 配置 1: 任务已提交, task_ids: [200000002]
+2026-03-24 00:00:24 INFO  [MAA] 任务已提交, taskIds: [200000002]
+2026-03-24 00:00:25 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:25 INFO  [Config] 配置保存成功
+2026-03-24 00:00:33 INFO  [Task] 任务 1/1 完成
+2026-03-24 00:00:33 INFO  [Task] 所有任务执行完成
+2026-03-24 00:00:33 INFO  [MAA] 停止 Agent, 实例: illekb0
+2026-03-24 00:00:33 INFO  [MAA] 停止 Agent 成功
+2026-03-24 00:00:33 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:33 INFO  [Config] 配置保存成功
+2026-03-24 00:00:35 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 00:00:35 INFO  [Config] 配置保存成功
+2026-03-24 08:34:32 INFO  [App] 加载 interface.json...
+2026-03-24 08:34:32 INFO  [App] Tauri 环境，加载 interface.json
+2026-03-24 08:34:32 INFO  [App] basePath (绝对路径): D:\browndust 2\install
+2026-03-24 08:34:32 INFO  [App] 托盘事件监听已注册
+2026-03-24 08:34:32 INFO  [App] dataPath (数据目录): D:\browndust 2\install
+2026-03-24 08:34:32 INFO  [App] 处理 13 个导入文件...
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/StartGame.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Draw.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Sociaty.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Operate.json
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/PVP.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Square.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/HuntingArea.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Bag.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Mission.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Passport.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Mail.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/Warcraft.json
+2026-03-24 08:34:32 INFO  [App] 加载导入文件: tasks/test.json
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:34:32 INFO  [App] 平台过滤: 移除了 1 个不支持的控制器 (不支持的类型: PlayCover)
+2026-03-24 08:34:32 DEBUG [Config] 加载配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:34:32 INFO  [App] 窗口图标已设置: D:\browndust 2\install/misc/MaaEnd-Tiny.png
+2026-03-24 08:34:32 INFO  [Config] 配置加载成功
+2026-03-24 08:34:32 INFO  [App] 全局快捷键已注册: F10 F11
+2026-03-24 08:34:32 INFO  [MAA] 初始化 MaaFramework, libDir: (默认)
+2026-03-24 08:34:32 INFO  [App] 已恢复后端状态: 0 个实例
+2026-03-24 08:34:32 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:34:32 DEBUG [MAA] 检查 MaaFramework 版本...
+2026-03-24 08:34:32 INFO  [MAA] 版本检查结果: {"current":"v5.7.0-alpha.2","minimum":"v5.5.0-beta.1","is_compatible":true}
+2026-03-24 08:34:32 INFO  [App] 加载完成, 项目: MaaBrownDust
+2026-03-24 08:34:32 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-24 08:34:32 INFO  [App] 检查更新: #掉我怕有bug,不敢删, 当前版本: v114514.0.0, 频道: stable
+2026-03-24 08:34:32 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:34:32 WARN  [App] 加载内容失败 [README.md]: 读取文件失败 [D:\browndust 2\install\README.md]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:34:32 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-24 08:34:32 INFO  [MAA] 找到 Win32 窗口: 0 个
+2026-03-24 08:34:33 WARN  [App] https://mirrorchyan.com/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:34:33 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:34:33 INFO  [Config] 配置保存成功
+2026-03-24 08:34:33 WARN  [App] https://mirrorchyan.net/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:34:33 ERROR [App] 检查更新失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:34:35 WARN  [App] 加载内容失败 [README.md]: 读取文件失败 [D:\browndust 2\install\README.md]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:34:35 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:34:35 INFO  [Config] 配置保存成功
+2026-03-24 08:34:40 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:34:40 INFO  [Config] 配置保存成功
+2026-03-24 08:39:10 INFO  [App] 加载 interface.json...
+2026-03-24 08:39:10 INFO  [App] Tauri 环境，加载 interface.json
+2026-03-24 08:39:10 INFO  [App] basePath (绝对路径): D:\browndust 2\install
+2026-03-24 08:39:10 INFO  [App] 托盘事件监听已注册
+2026-03-24 08:39:10 INFO  [App] dataPath (数据目录): D:\browndust 2\install
+2026-03-24 08:39:10 INFO  [App] 处理 13 个导入文件...
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/StartGame.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Draw.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Sociaty.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Operate.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/PVP.json
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Square.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/HuntingArea.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Bag.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Mission.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Passport.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Mail.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/Warcraft.json
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 INFO  [App] 加载导入文件: tasks/test.json
+2026-03-24 08:39:10 INFO  [App] 平台过滤: 移除了 1 个不支持的控制器 (不支持的类型: PlayCover)
+2026-03-24 08:39:10 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:39:10 DEBUG [Config] 加载配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:39:10 INFO  [Config] 配置加载成功
+2026-03-24 08:39:10 INFO  [App] 窗口图标已设置: D:\browndust 2\install/misc/MaaEnd-Tiny.png
+2026-03-24 08:39:10 INFO  [App] 全局快捷键已注册: F10 F11
+2026-03-24 08:39:10 INFO  [App] 已恢复后端状态: 0 个实例
+2026-03-24 08:39:10 INFO  [MAA] 初始化 MaaFramework, libDir: (默认)
+2026-03-24 08:39:10 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:39:10 DEBUG [MAA] 检查 MaaFramework 版本...
+2026-03-24 08:39:10 INFO  [MAA] 版本检查结果: {"current":"v5.7.0-alpha.2","minimum":"v5.5.0-beta.1","is_compatible":true}
+2026-03-24 08:39:10 INFO  [App] 加载完成, 项目: MaaBrownDust
+2026-03-24 08:39:10 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-24 08:39:10 INFO  [App] 检查更新: #掉我怕有bug,不敢删, 当前版本: v114514.0.0, 频道: stable
+2026-03-24 08:39:10 WARN  [App] 加载内容失败 [README.md]: 读取文件失败 [D:\browndust 2\install\README.md]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:39:10 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:39:10 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-24 08:39:10 INFO  [MAA] 找到 Win32 窗口: 0 个
+2026-03-24 08:39:10 WARN  [App] https://mirrorchyan.com/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:39:10 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:39:10 INFO  [Config] 配置保存成功
+2026-03-24 08:39:11 WARN  [App] https://mirrorchyan.net/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:39:11 ERROR [App] 检查更新失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:45:52 INFO  [App] 加载 interface.json...
+2026-03-24 08:45:53 INFO  [App] Tauri 环境，加载 interface.json
+2026-03-24 08:45:53 INFO  [App] basePath (绝对路径): D:\browndust 2\install
+2026-03-24 08:45:53 INFO  [App] 托盘事件监听已注册
+2026-03-24 08:45:53 INFO  [App] dataPath (数据目录): D:\browndust 2\install
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/StartGame.json
+2026-03-24 08:45:53 INFO  [App] 处理 13 个导入文件...
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Draw.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Sociaty.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Operate.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/PVP.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Square.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/HuntingArea.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Bag.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 option
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Mission.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Passport.json
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Mail.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/Warcraft.json
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 INFO  [App] 加载导入文件: tasks/test.json
+2026-03-24 08:45:53 INFO  [App] 平台过滤: 移除了 1 个不支持的控制器 (不支持的类型: PlayCover)
+2026-03-24 08:45:53 INFO  [App] 合并了 1 个导入的 task
+2026-03-24 08:45:53 DEBUG [Config] 加载配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:45:53 WARN  [App] 加载图标失败 [D:\browndust 2\install/misc/MaaEnd-Tiny.png]: 读取文件失败 [D:\browndust 2\install\misc\MaaEnd-Tiny.png]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:45:53 WARN  [App] 设置窗口图标失败: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:45:53 INFO  [Config] 配置加载成功
+2026-03-24 08:45:53 WARN  [App] 设置托盘图标失败: Failed to resolve icon path: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:45:53 INFO  [App] 全局快捷键已注册: F10 F11
+2026-03-24 08:45:53 INFO  [App] 已恢复后端状态: 0 个实例
+2026-03-24 08:45:53 INFO  [MAA] 初始化 MaaFramework, libDir: (默认)
+2026-03-24 08:45:53 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:45:53 DEBUG [MAA] 检查 MaaFramework 版本...
+2026-03-24 08:45:53 INFO  [App] 加载完成, 项目: MaaBrownDust
+2026-03-24 08:45:53 INFO  [MAA] 版本检查结果: {"current":"v5.7.0-alpha.2","minimum":"v5.5.0-beta.1","is_compatible":true}
+2026-03-24 08:45:53 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-24 08:45:53 INFO  [App] 检查更新: #掉我怕有bug,不敢删, 当前版本: v114514.0.0, 频道: stable
+2026-03-24 08:45:53 WARN  [App] 加载图标失败 [D:\browndust 2\install/misc/MaaEnd-Tiny.png]: 读取文件失败 [D:\browndust 2\install\misc\MaaEnd-Tiny.png]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:45:53 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-24 08:45:53 WARN  [App] 加载内容失败 [README.md]: 读取文件失败 [D:\browndust 2\install\README.md]: 系统找不到指定的文件。 (os error 2)
+2026-03-24 08:45:53 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:45:53 INFO  [MAA] 找到 Win32 窗口: 0 个
+2026-03-24 08:45:53 WARN  [App] https://mirrorchyan.com/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:45:53 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:45:53 INFO  [Config] 配置保存成功
+2026-03-24 08:45:53 ERROR [App] 检查更新失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:45:53 WARN  [App] https://mirrorchyan.net/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'M', \"Method Not Allowed\" is not valid JSON"}
+2026-03-24 08:45:56 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-24 08:45:56 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-24 08:45:56 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-24 08:45:56 INFO  [MAA] 找到 Win32 窗口: 0 个
+2026-03-24 08:45:57 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-24 08:45:57 INFO  [Config] 配置保存成功

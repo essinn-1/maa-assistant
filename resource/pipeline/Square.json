@@ -1,0 +1,145 @@
+{
+    "StartSquare":{
+        "next":[
+            "EnterGacha",
+            "GetDaily2",
+            "GetSquare"
+        ]
+    },
+    "EnterGacha":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Square/EnterGacha.png",
+                "threshold": 0.40,
+                "roi":[540,640,60,60]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "pre_delay":1000,
+        "next":[
+            "EnterSquare"
+        ]
+    },
+    "EnterSquare":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Square/TheSquare.png",
+                "threshold": 0.70,
+                "roi":[760,600,110,100]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[820,648]
+            }
+        },
+        "pre_delay":1000,
+        "next":[
+            "EnterSquare",
+            "GetDaily2",
+            "GetSquare"
+        ]
+    },
+    "GetDaily2":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/GetDaily.png",
+                "threshold": 0.50,
+                "roi":[900,555,85,85]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+            "GetDaily2",
+            "GetSquare",
+            "StartGame"
+        ]
+    },
+
+    "GetSquare":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Square/Get.png",
+                "threshold": 0.50,
+                "roi":[910,560,70,70]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":1000,
+        "next":[
+            "GetSquare",
+            "GetDaily2",
+            "StartGame"
+        ]
+    },
+    "MoveSquare1":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Square/Move.png",
+                "threshold": 0.30,
+                "roi":[115,500,160,160]
+            }
+        },
+        "max_hit": 2,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    192,
+                    588
+                ],
+                "end": [
+                    247,
+                    643
+                ],
+                "end_hold": 300
+            }
+        },
+        "post_delay":500,
+        "next":[
+            "MoveSquare2"
+        ]
+    },
+    "MoveSquare2":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/Move.png",
+                "threshold": 0.30,
+                "roi":[40,600,840,100]
+            }
+        },
+        "max_hit": 2,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    192,
+                    588
+                ],
+                "end": [
+                    137,
+                    533
+                ],
+                "end_hold": 500
+            }
+        },
+        "post_delay":500,
+        "next":[
+            "GetSquare",
+            "MoveSquare1"
+        ]
+    }
+}

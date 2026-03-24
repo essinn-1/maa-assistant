@@ -1,0 +1,356 @@
+{
+    "StartGame": {
+        "next": [
+            "EnterGame",
+            "[JumpBack]Waiting",
+            "[JumpBack]ClickContinue",
+            "[JumpBack]BackHome",
+            "[JumpBack]RejectAward",
+            "[JumpBack]RejectAnnouncement",
+            "[JumpBack]SevenDays",
+            "[JumpBack]InShadow",
+            "[JumpBack]GoBack",
+            "[JumpBack]GoBack2",
+            "[JumpBack]CorrectPVP",
+            "[JumpBack]PVPAward"
+        ]
+    },
+    "EnterGame": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "StartGame/Shadow.png",
+                "threshold": 0.60,
+                "roi":[500,50,300,460]
+            }
+        }
+    },
+    "ClickContinue": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ".*[SＳ][TＴ][AＡ].*",
+                "roi":[
+                    950,
+                    440,
+                    135,
+                    50
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+    "BackHome":{
+        "pre_delay": 0,
+        "post_delay": 2000,
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/HomeClick.png",
+                "roi":[1158,10,80,63],
+                "threshold":0.40
+            }
+        },
+        "action":{
+            "type":"Click"
+        }
+    },
+    "RejectAward":{
+        "pre_delay": 0,
+        "post_delay": 1000,
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/AwardRejectBottom.png",
+                "roi":[970,178,30,30],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        }
+    },
+    "RejectAnnouncement":{
+        "pre_delay": 0,
+        "post_delay": 1000,
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/AnnouncementRejectBottom.png",
+                "roi":[875,173,20,20],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        }
+    },
+    "Waiting":{
+        "pre_delay": 0,
+        "post_delay": 5000,
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"游戏启动中",
+                "roi":[895,114,466,12],
+                "threshold":0.40
+            }
+        }
+    },
+
+    "InShadow":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/More.png",
+                "roi":[1160,20,40,40],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "next":[
+            "EnterGame",
+            "Setting",
+            "InShadow"
+        ],
+        "post_delay":1000
+    },
+    
+    "Setting": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"设置",
+                "roi":[490,400,110,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "ToImage"
+        ]
+    },
+
+    "ToImage": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"图像",
+                "roi":[140,130,60,40],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "ImageMove",
+        "ToImage"
+        ]
+    },
+
+    "ImageMove": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":["技能","过场","动画"],
+                "roi":[360,540,120,35],
+                "threshold":0.50
+            }
+        },
+        "max_hit": 2,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    560,
+                    560
+                ],
+                "end": [
+                    580,
+                    180
+                ],
+                "end_hold": 1000
+            }
+        },
+    "next": [
+        "UseShadow1",
+        "UseShadow2",
+        "UseShadow3",
+        "UseShadow4",
+        "UseShadow5",
+        "ImageMove"
+        ]
+    },
+
+    "UseShadow1": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"使用",
+                "roi":[530,300,80,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "GoBack"
+        ]
+    },
+    "UseShadow2": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"使用",
+                "roi":[530,350,80,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "GoBack"
+        ]
+    },
+    "UseShadow3": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"使用",
+                "roi":[530,400,80,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "GoBack"
+        ]
+    },
+    "UseShadow4": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"使用",
+                "roi":[530,450,80,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "GoBack"
+        ]
+    },
+    "UseShadow5": {
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"使用",
+                "roi":[530,500,80,50],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+    "next": [
+        "GoBack"
+        ]
+    },
+
+    "GoBack":{
+        "pre_delay":1000,
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/Back.png",
+                "roi":[70,0,75,60],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "post_delay":1000
+    },
+    "GoBack2":{
+        "pre_delay":1000,
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/Back2.png",
+                "roi":[70,0,75,60],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "post_delay":1000
+    },
+    
+    "PVPAward":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "template":"点击"
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "post_delay":1500
+    },
+    
+    "SevenDays":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"7天内不再显示",
+                "roi":[840,130,200,50],
+                "threshold":0.60
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[990,161]
+            }
+        },
+        "post_delay":1000,
+        "next": [
+            "WhetherSevenDaysTick",
+            "SevenDays"
+        ]
+    },
+    "WhetherSevenDaysTick":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"StartGame/Tick.png",
+                "roi":[975,150,30,30],
+                "threshold":0.50
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[1110,530]
+            }
+        },
+        "post_delay":500
+    }
+}

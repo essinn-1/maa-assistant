@@ -1,0 +1,120 @@
+2026-03-19 18:51:12 INFO  [App] 加载 interface.json...
+2026-03-19 18:51:12 INFO  [App] Tauri 环境，加载 interface.json
+2026-03-19 18:51:12 INFO  [App] basePath (绝对路径): D:\browndust 2\install
+2026-03-19 18:51:12 INFO  [App] 托盘事件监听已注册
+2026-03-19 18:51:12 INFO  [App] dataPath (数据目录): D:\browndust 2\install
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/StartGame.json
+2026-03-19 18:51:12 INFO  [App] 处理 12 个导入文件...
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Draw.json
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Sociaty.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Operate.json
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/PVP.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Square.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/HuntingArea.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Bag.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Misson.json
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Passport.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/Mail.json
+2026-03-19 18:51:12 INFO  [App] 加载导入文件: tasks/test.json
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 合并了 1 个导入的 task
+2026-03-19 18:51:12 INFO  [App] 平台过滤: 移除了 1 个不支持的控制器 (不支持的类型: PlayCover)
+2026-03-19 18:51:12 DEBUG [Config] 加载配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-19 18:51:12 INFO  [App] 窗口图标已设置: D:\browndust 2\install/misc/MaaEnd-Tiny.png
+2026-03-19 18:51:12 INFO  [Config] 配置加载成功
+2026-03-19 18:51:12 INFO  [App] 全局快捷键已注册: F10 F11
+2026-03-19 18:51:12 INFO  [App] 已恢复后端状态: 0 个实例
+2026-03-19 18:51:12 INFO  [MAA] 初始化 MaaFramework, libDir: (默认)
+2026-03-19 18:51:12 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-19 18:51:12 DEBUG [MAA] 检查 MaaFramework 版本...
+2026-03-19 18:51:12 INFO  [MAA] 版本检查结果: {"current":"v5.7.0-alpha.2","minimum":"v5.5.0-beta.1","is_compatible":true}
+2026-03-19 18:51:12 INFO  [App] 加载完成, 项目: MaaBrownDust
+2026-03-19 18:51:12 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-19 18:51:12 INFO  [App] 检查更新: MaaEnd并不是，但是#掉我怕有bug, 当前版本: v114514.0.0, 频道: stable
+2026-03-19 18:51:12 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-19 18:51:12 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-19 18:51:12 INFO  [MAA] 找到 Win32 窗口: 0 个
+2026-03-19 18:51:12 WARN  [App] https://mirrorchyan.com/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'C', \"Cannot GET\"... is not valid JSON"}
+2026-03-19 18:51:12 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-19 18:51:12 INFO  [Config] 配置保存成功
+2026-03-19 18:51:12 ERROR [App] 检查更新失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'C', \"Cannot GET\"... is not valid JSON"}
+2026-03-19 18:51:12 WARN  [App] https://mirrorchyan.net/api/resources 请求失败: {"message":"Failed to execute 'close' on 'ReadableStreamDefaultController': Unexpected token 'C', \"Cannot GET\"... is not valid JSON"}
+2026-03-19 18:53:47 INFO  [Task] 当前已是管理员权限
+2026-03-19 18:53:47 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-19 18:53:47 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-19 18:53:47 INFO  [MAA] 创建实例: illekb0
+2026-03-19 18:53:47 INFO  [MAA] 创建实例成功: illekb0
+2026-03-19 18:53:47 INFO  [Task] 实例 配置 1: 自动连接已保存的设备...
+2026-03-19 18:53:47 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-19 18:53:47 INFO  [MAA] 找到 Win32 窗口: 1 个
+2026-03-19 18:53:47 DEBUG [MAA] 控制器配置: {"type":"Win32","handle":67138,"screencap_method":2,"mouse_method":32,"keyboard_method":32}
+2026-03-19 18:53:47 INFO  [MAA] 连接控制器, 实例: illekb0 类型: Win32
+2026-03-19 18:53:47 DEBUG [MAA]   窗口[0]: handle=67138, class=UnityWndClass, name=BrownDust II
+2026-03-19 18:53:48 INFO  [MAA] 控制器连接请求已发送, ctrlId: 100000001
+2026-03-19 18:54:03 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-19 18:54:03 INFO  [Config] 配置保存成功
+2026-03-19 18:54:05 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-19 18:54:05 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-19 18:54:05 INFO  [MAA] 搜索 Win32 窗口, classRegex: UnityWndClass , windowRegex: BrownDust II
+2026-03-19 18:54:05 INFO  [MAA] 找到 Win32 窗口: 1 个
+2026-03-19 18:54:05 DEBUG [MAA]   窗口[0]: handle=67138, class=UnityWndClass, name=BrownDust II
+2026-03-19 18:54:05 DEBUG [MAA] 获取 MaaFramework 版本...
+2026-03-19 18:54:05 INFO  [MAA] MaaFramework 版本: v5.7.0-alpha.2
+2026-03-19 18:54:05 INFO  [MAA] 创建实例: illekb0
+2026-03-19 18:54:05 INFO  [MAA] 创建实例成功: illekb0
+2026-03-19 18:54:05 INFO  [MAA] 连接控制器, 实例: illekb0 类型: Win32
+2026-03-19 18:54:05 DEBUG [MAA] 控制器配置: {"type":"Win32","handle":67138,"screencap_method":2,"mouse_method":32,"keyboard_method":32}
+2026-03-19 18:54:05 INFO  [MAA] 控制器连接请求已发送, ctrlId: 100000002
+2026-03-19 18:54:18 WARN  [Task] 实例 配置 1: 连接超时
+2026-03-19 18:54:18 WARN  [Task] 实例 配置 1: 连接设备失败
+2026-03-19 18:54:18 ERROR [Task] 任务启动异常: {}
+2026-03-19 18:54:18 INFO  [Task] 当前已是管理员权限
+2026-03-19 18:54:18 INFO  [Task] 实例 配置 1: 加载资源...
+2026-03-19 18:54:18 INFO  [MAA] 加载资源, 实例: illekb0 , 路径数: 1
+2026-03-19 18:54:18 DEBUG [MAA]   路径[0]: D:\browndust 2\install/resource
+2026-03-19 18:54:18 INFO  [MAA] 资源加载请求已发送, resIds: [100000001]
+2026-03-19 18:54:18 INFO  [Task] 实例 配置 1: 开始执行任务, 数量: 11
+2026-03-19 18:54:18 INFO  [MAA] 启动任务, 实例: illekb0 , 任务数: 11 , cwd: D:\browndust 2\install
+2026-03-19 18:54:18 DEBUG [MAA]   任务[2]: entry=InSociaty, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[4]: entry=EnterPVP, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[6]: entry=EnterHunt, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[1]: entry=DrawFirst, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[3]: entry=EnterOperating, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[5]: entry=SquareStart, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[0]: entry=StartGame, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[8]: entry=EnterMission, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[9]: entry=EnterPassport, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[7]: entry=EnterBag, pipelineOverride=[]
+2026-03-19 18:54:18 DEBUG [MAA]   任务[10]: entry=EnterMail, pipelineOverride=[]
+2026-03-19 18:54:18 INFO  [MAA] Agent 配置: {"child_exec":"agent/go-service","child_args":[]} , tcpCompatMode: false
+2026-03-19 18:54:19 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-19 18:54:19 INFO  [Config] 配置保存成功
+2026-03-19 18:54:19 INFO  [MAA] 任务已提交, taskIds: [200000001,200000002,200000003,200000004,200000005,200000006,200000007,200000008,200000009,200000010,200000011]
+2026-03-19 18:54:19 INFO  [Task] 实例 配置 1: 任务已提交, task_ids: [200000001,200000002,200000003,200000004,200000005,200000006,200000007,200000008,200000009,200000010,200000011]
+2026-03-19 18:54:48 INFO  [Task] 任务 1/11 完成
+2026-03-19 18:55:56 INFO  [Task] 任务 2/11 完成
+2026-03-19 18:56:10 INFO  [Task] 任务 3/11 完成
+2026-03-19 18:56:37 INFO  [Task] 任务 4/11 完成
+2026-03-19 18:58:23 INFO  [Task] 任务 5/11 完成
+2026-03-19 18:58:43 INFO  [Task] 任务 6/11 完成
+2026-03-19 18:59:13 INFO  [Task] 任务 7/11 完成
+2026-03-19 18:59:38 INFO  [Task] 任务 8/11 完成
+2026-03-19 18:59:53 INFO  [Task] 任务 9/11 完成
+2026-03-19 19:00:00 INFO  [Task] 定时检查: 周4 19:00
+2026-03-19 19:00:09 INFO  [Task] 任务 10/11 完成
+2026-03-19 19:00:17 INFO  [Task] 所有任务执行完成
+2026-03-19 19:00:17 INFO  [MAA] 停止 Agent 成功
+2026-03-19 19:00:17 INFO  [Task] 任务 11/11 完成
+2026-03-19 19:00:17 INFO  [MAA] 停止 Agent, 实例: illekb0
+2026-03-19 19:00:18 DEBUG [Config] 保存配置, 路径: D:/browndust 2/install/config/mxu-MaaBrownDust.json
+2026-03-19 19:00:18 INFO  [Config] 配置保存成功

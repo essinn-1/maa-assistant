@@ -1,0 +1,87 @@
+{
+    "StartMission":{
+        "next":[
+            "EnterMission",
+            "[JumpBack]StartGame"
+        ]
+    },
+    "EnterMission":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected":"任务",
+                "threshold": 0.60,
+                "roi":[435,670,40,20]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[455,656]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "MissionDaily",
+            "EnterMission"
+        ]
+    },
+    "MissionDaily":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected":"全部获得",
+                "threshold": 0.60,
+                "roi":[1085,660,75,20]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":3000,
+        "next":[
+            "MissionClick"
+        ]
+    },
+    "MissionClick":{
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[230,155]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "Weekly"
+        ]
+    },
+    "Weekly":{
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[230,155]
+            }
+        },
+        "post_delay":1000,
+        "next":[
+            "MissionWeekly"
+        ]
+    },
+    "MissionWeekly":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected":"全部获得",
+                "threshold": 0.60,
+                "roi":[1085,660,75,20]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":3000,
+        "next":[
+            "StartGame"
+        ]
+    }
+}

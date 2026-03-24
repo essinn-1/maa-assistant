@@ -1,0 +1,16 @@
+{
+    "task": [
+        {
+            "name": "每日抽卡",
+            "label": "抽卡！",
+            "entry": "StartDraw",
+            "description": "刚写的移动，也不知道能不能动，明天试试",
+            "controller": [
+                "Win32",
+                "Win32-Window",
+                "Win32-Front"
+            ]
+        }
+    ],
+    "option": {}
+}

@@ -1,0 +1,11 @@
+{
+    "task": [
+        {
+            "name": "EvilCastle",
+            "label": "",
+            "entry": "StartCastle",
+            "description": ""
+        }    
+    ],
+    "option": {}
+}
