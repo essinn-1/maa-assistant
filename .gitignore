@@ -1,1 +1,21 @@
+# Debug 文件和截图
+debug/
+*.png
+*.jpg
+*.jpeg
+
+# 日志文件
+*.log
+go-service.log
+maa*.log
+mxu-*.log
+
+# 大文件和编译产物
 *.pdb
+*.exe
+*.dll
+*.cache
+
+# 系统文件
+.DS_Store
+Thumbs.db
