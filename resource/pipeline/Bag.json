@@ -192,6 +192,7 @@
         "action":{
             "type":"Click"
         },
+        "post_delay":1500,
         "next":[
             "AnalysisLast"
         ]

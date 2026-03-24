@@ -2,7 +2,7 @@
     "task": [
         {
             "name": "Warcraft",
-            "label": "魔兽每日",
+            "label": "魔兽每日5次",
             "entry": "StartWarcraft",
             "description": "（打到挑战15再用）",
             "option":[
