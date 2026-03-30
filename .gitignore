@@ -21,3 +21,14 @@ mxu-*.log
 Thumbs.db
 cache/
 .gitignore
+
+# 用户配置
+config/mxu-MaaBrownDust.json
+
+# 大模型文件（如果用 Git LFS 或单独下载）
+resource/model/ocr/
+
+# 运行时文件
+*.log
+*.pdb
+*.tmp

@@ -361,7 +361,10 @@
     "CastleFreeNO":{
         "action":{
             "type":"DoNothing"
-        }
+        },
+        "next":[
+            "CastleSetFree"
+        ]
     },
 
     "CastleSetMax":{

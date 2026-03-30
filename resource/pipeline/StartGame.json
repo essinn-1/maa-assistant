@@ -5,6 +5,7 @@
             "[JumpBack]Waiting",
             "[JumpBack]ClickContinue",
             "[JumpBack]BackHome",
+            "[JumpBack]Cancle",
             "[JumpBack]RejectAward",
             "[JumpBack]RejectAnnouncement",
             "[JumpBack]SevenDays",
@@ -352,5 +353,18 @@
             }
         },
         "post_delay":500
+    },
+    "Cancle":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"取消",
+                "roi":[500,500,100,100]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "post_delay":1000
     }
 }
