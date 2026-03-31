@@ -240,7 +240,7 @@
             "param":{
                 "template":"Draw/ExclamationMark2.png",
                 "roi":[115,630,25,25],
-                "threshold":0.80
+                "threshold":0.90
             }
         },
         "next":[

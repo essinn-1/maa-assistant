@@ -61,7 +61,7 @@
             "type": "OCR",
             "param": {
                 "expected": ["点击","画面","即可","返回"],
-                "threshold": 0.80,
+                "threshold": 0.70,
                 "roi":[730,520,200,60]
             }
         },
@@ -332,7 +332,8 @@
         "post_delay":1500,
         "next":[
             "CorrectPVP", 
-            "Finish"
+            "Finish",
+            "Worship"
         ]
     },
     "Finish":{
