@@ -10,7 +10,7 @@
         "recognition":{
             "type":"OCR",
             "param":{
-                "expected":["魔兽","追踪者"],
+                "expected":["魔兽","追踪者","解锁"],
                 "roi":[1000,300,260,180],
                 "threshold":0.60
             }
