@@ -3,7 +3,11 @@
         {
             "name": "测试用",
             "label": "测试用",
+<<<<<<< HEAD
             "entry": "StartGame",
+=======
+            "entry": "StartBag",
+>>>>>>> c5322cb13133913dc23ff32a6436a6b0414c7f84
             "description": ""
         }
     ],

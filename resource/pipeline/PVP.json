@@ -378,7 +378,7 @@
                 "target":[75,37]
             }
         },
-        "post_delay":1500,
+        "post_delay":2500,
         "next":[
             "Worship",
             "FinishPVP"
@@ -391,7 +391,7 @@
             "type":"TemplateMatch",
             "param":{
                 "template":"PVP/Worship.png",
-                "roi":[260,310,140,80],
+                "roi":[250,290,250,150],
                 "threshold":0.50
             }
         },
