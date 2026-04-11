@@ -12,6 +12,8 @@
             "[JumpBack]InShadow",
             "[JumpBack]GoBack",
             "[JumpBack]GoBack2",
+            "[JumpBack]Quit",
+            "[JumpBack]GoOut",
             "[JumpBack]CorrectPVP",
             "[JumpBack]PVPAward"
         ]
