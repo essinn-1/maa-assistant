@@ -3,7 +3,9 @@
         "next":[
             "EnterGacha",
             "GetDaily2",
-            "GetSquare"
+            "GetSquare",
+            "EnterGacha2",
+            "[JumpBack]StartGame"
         ]
     },
     "EnterGacha":{
@@ -45,6 +47,68 @@
             "GetSquare"
         ]
     },
+    "EnterGacha2":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "StartGame/Shadow.png",
+                "threshold": 0.60,
+                "roi":[500,50,300,460]
+            }
+        },
+        "action":{
+            "type":"click",
+            "param":{
+                "target":[1130,645]
+            }
+        },
+        "next":[
+            "EnterSquare2",
+            "EnterSquareMove"
+        ]
+    },
+
+    "EnterSquareMove":{
+        "max_hit":2,
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    960,
+                    460
+                ],
+                "end": [
+                    500,
+                    460
+                ],
+                "end_hold": 1000
+            }
+        },
+        "next":[
+            "EnterSquare2",
+            "EnterSquareMove"
+
+        ]
+    },
+    "EnterSquare2":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Square/TheSquare2.png",
+                "threshold": 0.50,
+                "roi":[1000,300,280,255]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "post_delay":2500,
+        "next":[
+            "GetDaily2",
+            "GetSquare"
+        ]
+    },
+
     "GetDaily2":{
         "recognition": {
             "type": "TemplateMatch",

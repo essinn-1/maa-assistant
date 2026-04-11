@@ -86,10 +86,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param":{
-                "target_offset":[20,-20,0,0]
-            }
+            "type": "Click"
         },
         "post_delay":2000,
         "next": [

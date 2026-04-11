@@ -34,6 +34,5 @@ resource/model/ocr/
 *.log
 *.pdb
 *.tmp
-=======
 config/mxu-MaaBrownDust.json
 >>>>>>> c5322cb13133913dc23ff32a6436a6b0414c7f84

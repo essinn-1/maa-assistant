@@ -6,11 +6,16 @@
         ]
     },
     "EnterPassport":{
-        "action":{
-            "type":"click",
-            "param":{
-                "target":[1099,173]
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected":"通行证",
+                "threshold": 0.60,
+                "roi":[1070,180,80,40]
             }
+        },
+        "action":{
+            "type":"click"
         },
         "post_delay":500,
         "next":[
@@ -18,26 +23,55 @@
         ]
     },
     "ToPassport":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template":"Passport/ExclamationMark.png",
+                "roi":[330,180,30,300],
+                "threshold":0.60,
+                "green_mask":true
+            }
+        },
+        "action":{
+            "type":"DoNothing"
+        },
         "next":[
-            "Passport1",
-            "GoBack"
+            "[JumpBack]PassportMark",
+            "StartGame"
         ]
     },
     
-    "Passport1":{
-        "action":{
-            "type":"click",
+    "PassportMark":{
+        "recognition":{
+            "type":"TemplateMatch",
             "param":{
-                "target":[280,212]
+                "template":"Passport/ExclamationMark.png",
+                "roi":[330,180,30,300],
+                "threshold":0.60,
+                "green_mask":true
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "post_delay":1000,
+        "next":[
+            "PassportMark2"
+        ]
+    },
+    "PassportMark2":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target":[1065,450]
             }
         },
         "next":[
-            "GetPassport1"
-        ],
-        "post_delay":500
+            "PassportClick"
+        ]
     },
     
-    "GetPassport1":{
+    "PassportClick":{
         "recognition":{
             "type":"OCR",
             "param":{
@@ -55,59 +89,18 @@
         ]
     },
     "PassportClick1":{
-        "action":{
-            "type":"click",
-            "param":{
-                "target":[940,510]
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected":["点击","画面","即可","返回"],
+                "threshold": 0.60,
+                "roi":[530,640,200,20]
             }
         },
-        "pre_delay":2000,
-        "next":[
-            "Passport2"
-        ]
-    },
-
-    "Passport2":{
-        "action":{
-            "type":"click",
-            "param":{
-                "target":[280,280]
-            }
-        },
-        "post_delay":1500,
-        "next":[
-            "GetPassport2"
-        ]
-    },
-    
-    "GetPassport2":{
-        "recognition":{
-            "type":"OCR",
-            "param":{
-                "expected":"全部获得",
-                "roi":[925,500,65,20],
-                "threshold":0.50
-            }
-        },
-        "post_delay":2500,
         "action":{
             "type":"click"
         },
-        "next":[
-            "PassportClick2"
-        ]
-    },
-    
-    "PassportClick2":{
-        "action":{
-            "type":"click",
-            "param":{
-                "target":[940,510]
-            }
-        },
-        "pre_delay":1000,
-        "next":[
-            "GoBack"
-        ]
+        "post_delay":1000
     }
+
 }

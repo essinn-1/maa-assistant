@@ -65,7 +65,8 @@
         },
         "post_delay":1500,
         "next":[
-            "MainHunt1"
+            "MainHunt1",
+            "FastHunt1"
         ]
     },
     "MainHunt1":{
