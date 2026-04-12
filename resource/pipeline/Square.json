@@ -126,6 +126,7 @@
         "next":[
             "GetDaily2",
             "GetSquare",
+            "MoveSquare",
             "StartGame"
         ]
     },
@@ -153,9 +154,9 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "每日奖励",
-                "threshold": 0.70,
-                "roi":[1030,150,150,100]
+                "expected": ["每日","奖励","移动"],
+                "threshold": 0.60,
+                "roi":[1000,150,170,200]
             }
         },
         "action": {
@@ -164,6 +165,7 @@
         "post_delay":2500,
         "next":[
             "GetSquare",
+            "GetDaily2",
             "MoveSquare"
         ]
     }
