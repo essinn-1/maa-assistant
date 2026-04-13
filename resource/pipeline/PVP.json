@@ -91,9 +91,9 @@
         "post_delay":2500,
         "next":[
             "PVPWaiting",
-            "EnterPVP2",
             "GetDaily",
             "MovePVP",
+            "SeasonReward",
             "CorrectFirst"
         ]
     },

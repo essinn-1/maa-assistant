@@ -15,7 +15,8 @@
             "[JumpBack]Quit",
             "[JumpBack]GoOut",
             "[JumpBack]CorrectPVP",
-            "[JumpBack]PVPAward"
+            "[JumpBack]PVPAward",
+            "[JumpBack]SeasonReward"
         ]
     },
     "EnterGame": {
