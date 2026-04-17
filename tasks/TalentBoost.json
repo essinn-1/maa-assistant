@@ -1,0 +1,11 @@
+{
+    "task": [
+        {
+            "name": "刷购物天赋",
+            "label": "",
+            "entry": "StartTalent",
+            "description": ""
+        }
+    ],
+    "option": {}
+}

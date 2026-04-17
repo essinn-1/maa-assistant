@@ -4,12 +4,7 @@
             "name": "自动进入游戏",
             "label": "自动进入游戏",
             "entry": "StartGame",
-            "description": "自动检测并点击 'touch to start' 进入游戏",
-            "controller": [
-                "Win32",
-                "Win32-Window",
-                "Win32-Front"
-            ]
+            "description": "自动检测并点击 'touch to start' 进入游戏"
         }
     ],
     "option": {}

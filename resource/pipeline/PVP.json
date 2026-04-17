@@ -124,7 +124,8 @@
             "param": {
                 "template": "PVP/GetDaily.png",
                 "threshold": 0.50,
-                "roi":[905,555,75,640]
+                "roi":[905,555,75,640],
+                "green_mask":true
             }
         },
         "action":{

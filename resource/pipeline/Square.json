@@ -70,6 +70,14 @@
     },
 
     "EnterSquareMove":{
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "PVP/EnterPVP.png",
+                "threshold": 0.50,
+                "roi":[50,300,450,255]
+            }
+        },
         "max_hit":2,
         "action": {
             "type": "Swipe",
@@ -88,7 +96,6 @@
         "next":[
             "EnterSquare2",
             "EnterSquareMove"
-
         ]
     },
     "EnterSquare2":{
@@ -116,8 +123,9 @@
             "type": "TemplateMatch",
             "param": {
                 "template": "PVP/GetDaily.png",
-                "threshold": 0.50,
-                "roi":[900,555,85,85]
+                "threshold": 0.80,
+                "roi":[900,555,85,85],
+                "green_mask":true
             }
         },
         "action":{
@@ -136,7 +144,7 @@
             "type": "TemplateMatch",
             "param": {
                 "template": "Square/Get.png",
-                "threshold": 0.50,
+                "threshold": 0.80,
                 "roi":[910,560,70,70],
                 "green_mask":true
             }
@@ -163,7 +171,7 @@
         "action": {
             "type": "click"
         },
-        "post_delay":2500,
+        "post_delay":5000,
         "next":[
             "GetSquare",
             "GetDaily2",

@@ -85,7 +85,9 @@
     "agent": {
         "child_exec": "agent/go-service",
         "child_args": [],
-        "timeout":15000
+        "timeout":15000,
+        "identifier":"mxu_browndust",
+        "auto_reconnect": true
     },
     "task": [],
     "import": [
@@ -102,6 +104,7 @@
         "tasks/Mail.json",
         "tasks/Warcraft.json",
         "tasks/EvilCastle.json",
-        "tasks/test.json"
+        "tasks/test.json",
+        "tasks/TalentBoost.json"
     ]
 }

@@ -2,7 +2,8 @@
     "StartGame": {
         "next": [
             "EnterGame",
-            "[JumpBack]Waiting",
+            "[JumpBack]StartWaiting1",
+            "[JumpBack]StartWaiting2",
             "[JumpBack]ClickContinue",
             "[JumpBack]BackHome",
             "[JumpBack]Cancle",
@@ -47,6 +48,40 @@
             "type": "Click"
         }
     },
+
+    "StartWaiting1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["确认","下载","内容"],
+                "roi":[
+                    850,
+                    450,
+                    150,
+                    50
+                ],
+                "threshold": 0.50
+            }
+        },
+        "post_delay":2000
+    },
+    "StartWaiting2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["游戏","启动中"],
+                "roi":[
+                    850,
+                    450,
+                    150,
+                    50
+                ],
+                "threshold": 0.50
+            }
+        },
+        "post_delay":2000
+    },
+
     "BackHome":{
         "pre_delay": 0,
         "post_delay": 2000,
@@ -90,18 +125,6 @@
         },
         "action":{
             "type":"Click"
-        }
-    },
-    "Waiting":{
-        "pre_delay": 0,
-        "post_delay": 5000,
-        "recognition":{
-            "type":"OCR",
-            "param":{
-                "expected":"游戏启动中",
-                "roi":[895,114,466,12],
-                "threshold":0.40
-            }
         }
     },
 
