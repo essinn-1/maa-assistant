@@ -69,6 +69,7 @@
         },
         "post_delay":1000,
         "next":[
+            "AllDraw",
             "ClothDraw",
             "ClothMove",
             "Cloth"
@@ -104,6 +105,7 @@
             }
         },
         "next":[
+            "AllDraw",
             "EquipmentDraw",
             "EquipmentMove",
             "Equipment"
@@ -123,6 +125,48 @@
             "Draw"
         ]
     },
+
+    "AllDraw":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ["所有","免费","抽抽乐"],
+                "roi":[
+                    180,
+                    630,
+                    120,
+                    35
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":1500,
+        "next":[
+            "AllDrawSure",
+            "AllDraw"
+        ]
+    },
+    "AllDrawSure":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"确认",
+                "roi":[680,415,60,60],
+                "threshold":0.60
+            }
+        },
+        "action":{
+            "type":"Click"
+            },
+        "post_delay":1000,
+        "next":[
+            "DrawSkip"
+        ]
+    },
+
     "ClothDraw":{
         "recognition":{
             "type":"TemplateMatch",

@@ -5,6 +5,7 @@
             "[JumpBack]StartWaiting1",
             "[JumpBack]StartWaiting2",
             "[JumpBack]ClickContinue",
+            "[JumpBack]ClickContinue2",
             "[JumpBack]BackHome",
             "[JumpBack]Cancle",
             "[JumpBack]RejectAward",
@@ -17,7 +18,8 @@
             "[JumpBack]GoOut",
             "[JumpBack]CorrectPVP",
             "[JumpBack]PVPAward",
-            "[JumpBack]SeasonReward"
+            "[JumpBack]SeasonReward",
+            "[JumpBack]CorrectWarcraft"
         ]
     },
     "EnterGame": {
@@ -36,12 +38,31 @@
             "param": {
                 "expected": ".*[SＳ][TＴ][AＡ].*",
                 "roi":[
-                    950,
-                    440,
-                    135,
-                    50
+                    780,
+                    380,
+                    280,
+                    120
                 ],
-                "threshold": 0.50
+                "threshold": 0.40
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
+    },
+
+    "ClickContinue2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "StartGame/continue.png",
+                "roi":[
+                    780,
+                    380,
+                    280,
+                    120
+                ],
+                "threshold": 0.40
             }
         },
         "action": {
@@ -333,7 +354,7 @@
         "recognition":{
             "type":"OCR",
             "param":{
-                "template":"点击"
+                "expected":"点击"
             }
         },
         "action":{

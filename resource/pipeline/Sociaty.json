@@ -1,7 +1,8 @@
 {
     "StartSociaty":{
         "next":[
-            "InSociaty"
+            "InSociaty",
+            "[JumpBack]StartGame"
         ]
     },
     "InSociaty": {

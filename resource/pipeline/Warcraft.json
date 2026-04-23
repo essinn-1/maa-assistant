@@ -144,5 +144,22 @@
         "next":[
             "StartGame"
         ]
+    },
+
+    "CorrectWarcraft":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": ".*奖励.*",
+                "threshold": 0.70,
+                "roi":[750,500,250,100]
+            }
+        },
+        "action":{
+            "type":"click"
+        },
+        "next":[
+
+        ]
     }
 }
