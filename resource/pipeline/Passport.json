@@ -1,106 +1,136 @@
 {
-    "StartPassport":{
-        "next":[
+    "StartPassport": {
+        "next": [
             "EnterPassport",
             "[JumpBack]StartGame"
         ]
     },
-    "EnterPassport":{
+    "EnterPassport": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected":"通行证",
+                "expected": "通行证",
                 "threshold": 0.60,
-                "roi":[1070,180,80,40]
+                "roi": [
+                    1070,
+                    180,
+                    80,
+                    40
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":500,
-        "next":[
+        "post_delay": 500,
+        "next": [
             "ToPassport"
         ]
     },
-    "ToPassport":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Passport/ExclamationMark.png",
-                "roi":[330,180,30,300],
-                "threshold":0.60,
-                "green_mask":true
+    "ToPassport": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Passport/ExclamationMark.png",
+                "roi": [
+                    330,
+                    180,
+                    30,
+                    300
+                ],
+                "threshold": 0.60,
+                "green_mask": true
             }
         },
-        "action":{
-            "type":"DoNothing"
+        "action": {
+            "type": "DoNothing"
         },
-        "next":[
+        "next": [
             "[JumpBack]PassportMark",
             "StartGame"
         ]
     },
-    
-    "PassportMark":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Passport/ExclamationMark.png",
-                "roi":[330,180,30,300],
-                "threshold":0.60,
-                "green_mask":true
+    "PassportMark": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Passport/ExclamationMark.png",
+                "roi": [
+                    330,
+                    180,
+                    30,
+                    300
+                ],
+                "threshold": 0.60,
+                "green_mask": true
             }
         },
-        "action":{
-            "type":"Click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "PassportMark2"
         ]
     },
-    "PassportMark2":{
-        "action":{
-            "type":"Click",
-            "param":{
-                "target":[1065,450]
+    "PassportMark2": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    1065,
+                    450
+                ]
             }
         },
-        "next":[
+        "next": [
             "PassportClick"
         ]
     },
-    
-    "PassportClick":{
-        "recognition":{
-            "type":"OCR",
-            "param":{
-                "expected":"全部获得",
-                "roi":[925,500,65,20],
-                "threshold":0.50
-            }
-        },
-        "post_delay":2500,
-        "action":{
-            "type":"click"
-        },
-        "next":[
-            "PassportClick1"
-        ]
-    },
-    "PassportClick1":{
+    "PassportClick": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected":["点击","画面","即可","返回"],
-                "threshold": 0.60,
-                "roi":[530,640,200,20]
+                "expected": "全部获得",
+                "roi": [
+                    925,
+                    500,
+                    65,
+                    20
+                ],
+                "threshold": 0.50
             }
         },
-        "action":{
-            "type":"click"
+        "post_delay": 2500,
+        "action": {
+            "type": "click"
         },
-        "post_delay":1000
+        "next": [
+            "PassportClick1"
+        ]
+    },
+    "PassportClick1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "点击",
+                    "画面",
+                    "即可",
+                    "返回"
+                ],
+                "threshold": 0.60,
+                "roi": [
+                    530,
+                    640,
+                    200,
+                    20
+                ]
+            }
+        },
+        "action": {
+            "type": "click"
+        },
+        "post_delay": 1000
     }
-
 }

@@ -1,210 +1,235 @@
 {
-
-
-
-
-    "TransferVillage":{
+    "TransferVillage": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": "Absorb/Get.png",
                 "threshold": 0.80,
-                "roi":[910,560,70,70],
-                "green_mask":true
+                "roi": [
+                    910,
+                    560,
+                    70,
+                    70
+                ],
+                "green_mask": true
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "TransferMoveLeft"
         ]
     },
-    "TransferMoveLeft":{
+    "TransferMoveLeft": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": "Absorb/MoveLeft.png",
                 "threshold": 0.80,
-                "roi":[225,320,60,60]
+                "roi": [
+                    225,
+                    320,
+                    60,
+                    60
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "TransferIfSave",
             "TransferMoveLeft"
         ]
     },
-    "TransferMoveRight":{
+    "TransferMoveRight": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": "Absorb/MoveRight.png",
                 "threshold": 0.80,
-                "roi":[1000,320,60,60]
+                "roi": [
+                    1000,
+                    320,
+                    60,
+                    60
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "TransferArray"
         ]
     },
-    "TransferIfSave":{
+    "TransferIfSave": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": [".*安全.*"],
+                "expected": [
+                    ".*安全.*"
+                ],
                 "threshold": 0.60,
-                "roi":[565,640,65,30]
+                "roi": [
+                    565,
+                    640,
+                    65,
+                    30
+                ]
             }
         },
         "action": {
             "type": "DoNothing"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "TransferArray",
             "AbsordBack"
         ]
     },
-    "TransferArray":{
+    "TransferArray": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": "Absorb/TransferArray.png",
                 "threshold": 0.60,
-                "roi":[400,160,500,400],
-                "green_mask":true
-            }
-        },
-        "action":{
-            "type":"click"
-        },
-        "post_delay":3000,
-        "next":[
-            "Exploration",
-            "Call" 
-        ]
-    },
-    "AbsordBack":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Absorb/Back.png",
-                "roi":[60,0,85,60],
-                "threshold":0.50
-            }
-        },
-        "action":{
-            "type":"Click",
-            "param":{
-                "target":[75,37]
-            }
-        },
-        "post_delay":1000,
-        "next":[
-            "Exploration"
-        ]
-    },
-
-    "Exploration":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Absorb/Exploration.png",
-                "roi":[990,450,270,260],
-                "threshold":0.50
-            }
-        },
-        "action":{
-            "type":"Click"
-        },
-        "post_delay":1000,
-        "next":[
-            "Absort"
-        ]
-    },
-    "Absort":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Absorb/Absorb.png",
-                "roi":[990,450,270,260],
-                "threshold":0.50
-            }
-        },
-        "action":{
-            "type":"Click"
-        },
-        "post_delay":1000,
-        "next":[
-            "TransferMove"
-        ]
-    },
-    "Call":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Absorb/Convene.png",
-                "roi":[990,450,270,260],
-                "threshold":0.50
-            }
-        },
-        "action":{
-            "type":"Click"
-        },
-        "post_delay":1000,
-        "next":[
-            "Absort"
-        ]
-    },
-    "CheckLoopCount": {
-        "recognition": {
-            "type": "LoopCount",
-            "param": {
-                "max_count": 2,
-                "target": "TransferMoveRight"
+                "roi": [
+                    400,
+                    160,
+                    500,
+                    400
+                ],
+                "green_mask": true
             }
         },
         "action": {
-            "type": "DoNothing"
+            "type": "Click"
         },
-        "post_delay": 0,
+        "post_delay": 3000,
         "next": [
-            "TransferMoveRight",
-            "End"
+            "Exploration",
+            "Call"
         ]
     },
-
-    "TransferMove":{
+    "AbsordBack": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Absorb/Back.png",
+                "roi": [
+                    60,
+                    0,
+                    85,
+                    60
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    75,
+                    37
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "Exploration"
+        ]
+    },
+    "Exploration": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Absorb/Exploration.png",
+                "roi": [
+                    990,
+                    450,
+                    270,
+                    260
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "Absort"
+        ]
+    },
+    "Absort": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Absorb/Absorb.png",
+                "roi": [
+                    990,
+                    450,
+                    270,
+                    260
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "TransferMove"
+        ]
+    },
+    "Call": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Absorb/Convene.png",
+                "roi": [
+                    990,
+                    450,
+                    270,
+                    260
+                ],
+                "threshold": 0.50
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "Absort"
+        ]
+    },
+    "TransferMove": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": "Absorb/Get.png",
                 "threshold": 0.80,
-                "roi":[910,560,70,70],
-                "green_mask":true
+                "roi": [
+                    910,
+                    560,
+                    70,
+                    70
+                ],
+                "green_mask": true
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
-            "CheckLoopCount"
-        ]
+        "post_delay": 1000,
+        "next": []
     },
-
-
-
-    "End":{
-        "type":"DoNothing"
-    }
+    "End": {}
 }

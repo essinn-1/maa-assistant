@@ -1,78 +1,126 @@
 {
-    "StartWarcraft":{
-        "next":[
+    "StartWarcraft": {
+        "next": [
             "EnterWarcraft",
+            "EnterWarcraft2",
             "[JumpBack]StartGame"
         ]
     },
-
-    "EnterWarcraft":{
-        "recognition":{
-            "type":"OCR",
-            "param":{
-                "expected":["魔兽","追踪者","解锁"],
-                "roi":[1000,300,260,180],
-                "threshold":0.60
+    "EnterWarcraft": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": 
+                    ".*兽.*",
+                "roi": [
+                    1000,
+                    410,
+                    260,
+                    180
+                ],
+                "threshold": 0.60
             }
         },
-        "action":{
-            "type":"Click",
-            "param":{
-                "target":[1110,360]
-            }
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "ChallengeBattle",
             "EnterWarcraft"
         ]
     },
-    "ChallengeBattle":{
+    "EnterWarcraft2": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "剧情",
+                    "解锁"
+                ],
+                "roi": [
+                    1080,
+                    400,
+                    80,
+                    180
+                ],
+                "threshold": 0.60
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "ChallengeBattle",
+            "EnterWarcraft2"
+        ]
+    },
+    "ChallengeBattle": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": "挑战战斗",
                 "threshold": 0.80,
-                "roi":[350,600,300,60]
+                "roi": [
+                    350,
+                    600,
+                    300,
+                    60
+                ]
             }
         },
         "action": {
             "type": "Click",
-            "param":{
-                "target_offset":[40,-80,0,0]
+            "param": {
+                "target_offset": [
+                    40,
+                    -80,
+                    0,
+                    0
+                ]
             }
         },
-        "post_delay":1000,
+        "post_delay": 1000,
         "next": [
             "WarcraftBattleChoose",
             "WarcraftBattleSwipe",
             "ChallengeBattle"
         ]
     },
-    "WarcraftBattleChoose":{
+    "WarcraftBattleChoose": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": "15",
                 "threshold": 0.80,
-                "roi":[150,660,60,60]
+                "roi": [
+                    150,
+                    660,
+                    60,
+                    60
+                ]
             }
         },
-        "action":{
-            "type":"Click"
+        "action": {
+            "type": "Click"
         },
-        "next":[
+        "next": [
             "WarcraftQuickBattle"
         ]
     },
-
-    "WarcraftBattleSwipe":{
+    "WarcraftBattleSwipe": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": "挑战战斗",
                 "threshold": 0.80,
-                "roi":[180,10,100,50]
+                "roi": [
+                    180,
+                    10,
+                    100,
+                    50
+                ]
             }
         },
         "action": {
@@ -89,77 +137,91 @@
                 "end_hold": 1000
             }
         },
-        "next":[
+        "next": [
             "WarcraftBattleChoose",
             "WarcraftBattleSwipe"
         ]
     },
-
-    "WarcraftQuickBattle":{
+    "WarcraftQuickBattle": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": "快速战斗",
                 "threshold": 0.80,
-                "roi":[740,640,120,40]
+                "roi": [
+                    740,
+                    640,
+                    120,
+                    40
+                ]
             }
         },
-        "action":{
-            "type":"Click"
+        "action": {
+            "type": "Click"
         },
-        "next":[
+        "next": [
             "WarcraftSetMax"
         ]
     },
-
-    "WarcraftSetMax":{
+    "WarcraftSetMax": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "template": "MAX",
+                "expected": "MAX",
                 "threshold": 0.60,
-                "roi":[740,350,80,50]
+                "roi": [
+                    750,
+                    325,
+                    60,
+                    75
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "next":[
+        "next": [
             "WarcraftBegin"
         ]
     },
-
-    "WarcraftBegin":{
+    "WarcraftBegin": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": "战斗",
                 "threshold": 0.80,
-                "roi":[640,530,60,40]
+                "roi": [
+                    640,
+                    530,
+                    60,
+                    40
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "next":[
+        "next": [
             "StartGame"
         ]
     },
-
-    "CorrectWarcraft":{
+    "CorrectWarcraft": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected": ".*奖励.*",
                 "threshold": 0.70,
-                "roi":[750,500,250,100]
+                "roi": [
+                    750,
+                    500,
+                    250,
+                    100
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "next":[
-
-        ]
+        "next": []
     }
 }

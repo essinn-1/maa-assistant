@@ -1,96 +1,113 @@
 {
-    "StartMission":{
-        "next":[
+    "StartMission": {
+        "next": [
             "EnterMission",
             "[JumpBack]StartGame"
         ]
     },
-    "EnterMission":{
+    "EnterMission": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected":"任务",
+                "expected": "任务",
                 "threshold": 0.60,
-                "roi":[435,670,40,20]
+                "roi": [
+                    435,
+                    670,
+                    40,
+                    20
+                ]
             }
         },
-        "action":{
-            "type":"click",
-            "param":{
-                "target":[455,656]
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    455,
+                    656
+                ]
             }
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "Mission"
         ]
     },
-
-    "Mission":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Mission/ExclamationMark.png",
-                "roi":[260,70,50,200],
-                "threshold":0.70
-            }
+    "Mission": {
+        "action": {
+            "type": "DoNothing"
         },
-        "action":{
-            "type":"DoNothing"
-        },
-        "next":[
+        "next": [
             "[JumpBack]MissionMark",
             "StartGame"
         ]
     },
-
-    "MissionMark":{
-        "recognition":{
-            "type":"TemplateMatch",
-            "param":{
-                "template":"Mission/ExclamationMark.png",
-                "roi":[260,70,50,200],
-                "threshold":0.70
+    "MissionMark": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Mission/ExclamationMark.png",
+                "roi": [
+                    260,
+                    70,
+                    50,
+                    200
+                ],
+                "threshold": 0.70
             }
         },
-        "action":{
-            "type":"Click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "MissionClick"
         ]
     },
-
-     "MissionClick":{
+    "MissionClick": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected":"全部获得",
+                "expected": "全部获得",
                 "threshold": 0.60,
-                "roi":[1085,660,75,20]
+                "roi": [
+                    1085,
+                    660,
+                    75,
+                    20
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":2000,
-        "next":[
+        "post_delay": 2000,
+        "next": [
             "MissionBack"
         ]
     },
-    "MissionBack":{
+    "MissionBack": {
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected":["点击","画面","即可","返回"],
+                "expected": [
+                    "点击",
+                    "画面",
+                    "即可",
+                    "返回"
+                ],
                 "threshold": 0.60,
-                "roi":[530,640,200,20]
+                "roi": [
+                    530,
+                    640,
+                    200,
+                    20
+                ]
             }
         },
-        "action":{
-            "type":"click"
+        "action": {
+            "type": "Click"
         },
-        "post_delay":1000
+        "post_delay": 1000
     }
 }

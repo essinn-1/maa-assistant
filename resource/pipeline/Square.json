@@ -163,9 +163,9 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": ["每日","奖励","移动"],
+                "expected": ["每日","奖励"],
                 "threshold": 0.60,
-                "roi":[1000,190,170,100]
+                "roi":[1000,130,170,200]
             }
         },
         "action": {

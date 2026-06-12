@@ -1,27 +1,35 @@
 {
-    "StartSociaty":{
-        "next":[
+    "StartSociaty": {
+        "next": [
             "InSociaty",
             "[JumpBack]StartGame"
         ]
     },
     "InSociaty": {
-        "pre_delay":3000,
+        "pre_delay": 3000,
         "recognition": {
             "type": "OCR",
             "param": {
-                "excepted": "公会",
+                "expected": "公会",
                 "threshold": 0.70,
-                "roi":[228,122,35,20]
+                "roi": [
+                    220,
+                    120,
+                    50,
+                    20
+                ]
             }
         },
         "action": {
             "type": "Click",
-            "param":{
-                "target":[246,101]
+            "param": {
+                "target": [
+                    246,
+                    101
+                ]
             }
         },
-        "post_delay":3000,
+        "post_delay": 3000,
         "next": [
             "ClickSecond",
             "OutSociaty"
@@ -30,22 +38,29 @@
     "ClickSecond": {
         "action": {
             "type": "Click",
-            "param": {"target": [80, 360]}
+            "param": {
+                "target": [
+                    80,
+                    360
+                ]
+            }
         },
-        "next":[
+        "next": [
             "OutSociaty"
         ]
     },
-
-    "OutSociaty":{
-        "action":{
-            "type":"Click",
-            "param":{
-                "target":[113,33]
+    "OutSociaty": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    113,
+                    33
+                ]
             }
         },
-        "post_delay":1000,
-        "next":[
+        "post_delay": 1000,
+        "next": [
             "BesureSociaty",
             "ClickSecond"
         ]
@@ -56,41 +71,57 @@
             "param": {
                 "template": "StartGame/Shadow.png",
                 "threshold": 0.60,
-                "roi":[500,50,300,460]
+                "roi": [
+                    500,
+                    50,
+                    300,
+                    460
+                ]
             }
         },
-        "next":[
+        "next": [
             "InHomeLand"
         ]
     },
-    "InHomeLand":{
-        "pre_delay":0,
+    "InHomeLand": {
+        "pre_delay": 0,
         "recognition": {
             "type": "OCR",
             "param": {
                 "excepted": "我的小屋",
                 "threshold": 0.60,
-                "roi":[75,122,70,20]
+                "roi": [
+                    75,
+                    122,
+                    70,
+                    20
+                ]
             }
         },
         "action": {
             "type": "Click",
-            "param":{
-                "target":[109,101]
+            "param": {
+                "target": [
+                    109,
+                    101
+                ]
             }
         },
-        "post_delay":3000,
+        "post_delay": 3000,
         "next": [
             "OutHomeLand"
         ]
     },
-    "OutHomeLand":{
-        "action":{
-            "type":"Click",
-            "param":{
-                "target":[113,33]
+    "OutHomeLand": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    113,
+                    33
+                ]
             }
         },
-        "post_delay":1000
+        "post_delay": 1000
     }
 }
